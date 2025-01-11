@@ -1,8 +1,9 @@
 @use "@scss/common.scss" as *;
 
 :root {
-  background-color: $primary-color;
+  background-color: $secondary-color;
   color: #000;
+  overflow-x: hidden;
 }
 
 .app {
