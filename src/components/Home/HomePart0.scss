@@ -15,8 +15,8 @@
   .drawer {
     position: absolute;
     height: 100vh;
-    width: 40vw;
-    background-color: #b50000;
+    width: 50vw;
+    background-color: #cc7a00;
     z-index: 4;
     padding: 50px 2rem;
     transition: transform 0.4s ease;
@@ -30,11 +30,13 @@
       color: #FFF;
       text-align: center;
       font-weight: 500;
+      font-size: 25px;
     }
 
     h1 {
       color: #FFF;
       text-align: center;
+      font-size: 35px;
     }
 
     .divider {
@@ -42,6 +44,7 @@
       height: 3px;
       background-color: #FFF;
       margin-top: 20px;
+      margin-bottom: 40px;
     }
 
     .toggle-button {
@@ -63,13 +66,42 @@
       z-index: 5;
 
       &:hover {
-        background-color: #b50000;
+        background-color: #830000;
         color: #fff;
       }
     }
 
     .toggle-button-closed {
       transform: translateX(45px);
+    }
+
+    .credits > * {
+      color: #FFF;
+      text-align: center;
+    }
+
+    .credits {
+      section {
+        margin-bottom: 35px;
+      }
+      .title {
+        margin-bottom: 10px;
+        font-size: 25px;
+        font-weight: 600;
+      }
+      a {
+        text-decoration: none;
+        color: #FFF;
+        font-weight: 500;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+        
+        &:hover {
+          background-color: rgb(255, 234, 0);
+          color: #000;
+        }
+      }
     }
   }
 }
