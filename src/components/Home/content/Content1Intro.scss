@@ -1,0 +1,79 @@
+@use "@scss/common.scss" as *;
+
+.content1-intro {
+  position: relative;
+  padding: 100px 15rem;
+
+  .title {
+    color: #000;
+    font-size: 45px;
+    font-weight: 700;
+    z-index: 12;
+
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
+  }
+
+  .course {
+    color: $primary-color;
+    font-size: 25px;
+    z-index: 12;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  .content-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 12;
+    margin-top: 35px;
+    flex-shrink: 1;
+    width: 50vw;
+    word-wrap: break-word;
+    gap: 20px;
+
+    @media (max-width: 768px) {
+      width: 80vw;
+    }
+
+    p {
+      color: #000 !important;
+      font-size: 22px;
+      text-align: left;
+      word-break: break-word;
+      width: 100%;
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
+
+    span {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 40px;
+      min-height: 40px;
+      max-width: 40px;
+      max-height: 40px;
+      color: #ffffff;
+      background-color: $primary-color;
+      border-radius: 50%;
+      margin-right: 10px;
+      font-size: 30px;
+      font-weight: 600;
+      user-select: none;
+
+      @media (max-width: 768px) {
+        min-width: 30px;
+        min-height: 30px;
+        max-width: 30px;
+        max-height: 30px;
+      }
+    }
+  }
+}

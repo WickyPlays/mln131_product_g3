@@ -5,8 +5,25 @@
   .content-bg {
     width: 100%;
     min-height: 100vh;
+    position: relative;
     background-image: url("@assets/content-bg.jpg");
     background-size: cover;
     background-position: center;
+    background-color: #FFF;
+  }
+
+  .cover {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.262);
+  }
+
+  .content {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
   }
 }
