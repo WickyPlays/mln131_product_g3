@@ -1,0 +1,12 @@
+.home-part1 {
+  min-height: 100vh;
+  width: 100%;
+
+  .content-bg {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("@assets/content-bg.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}

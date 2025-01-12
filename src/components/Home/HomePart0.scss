@@ -1,3 +1,5 @@
+@use '@scss/common.scss' as *;
+
 .home-part0 {
   position: relative;
   width: 100vw;
@@ -16,7 +18,7 @@
     position: absolute;
     height: 100vh;
     width: 50vw;
-    background-color: #cc7a00;
+    background-color: $primary-color;
     z-index: 4;
     padding: 50px 2rem;
     transition: transform 0.4s ease;
