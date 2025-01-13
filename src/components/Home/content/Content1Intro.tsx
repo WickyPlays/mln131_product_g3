@@ -21,7 +21,7 @@ export default function Content1Intro() {
           <span>5</span> Tương tác với trí tuệ thông minh (AI)
         </p>
         <p>
-          <span>5</span> Minigames
+          <span>6</span> Minigames
         </p>
       </div>
     </div>
