@@ -3,16 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://wickyplays.github.io/mln131_product_g3",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "sass": "^1.83.1",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^6.0.2",
@@ -27,9 +27,12 @@
     "formik": "^2.4.6",
     "jwt-decode": "^4.0.0",
     "moment": "^2.30.1",
+    "quill": "^2.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.1",
     "react-toastify": "^10.0.5",
-    "quill": "^2.0.2",
+    "sass": "^1.83.1",
     "xlsx": "^0.18.5",
     "yup": "^1.4.0"
   },
@@ -44,6 +47,7 @@
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.16",
+    "gh-pages": "^6.3.0",
     "globals": "^15.14.0",
     "typescript": "^5.7.2",
     "vite": "^6.0.5"
