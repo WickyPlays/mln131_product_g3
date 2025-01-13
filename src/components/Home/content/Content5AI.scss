@@ -61,12 +61,15 @@
     cursor: pointer;
     background-color: $primary-color;
     text-align: left;
-    font-size: 16px;
     transition: background-color 0.3s, color 0.3s;
     color: #fff;
     display: flex;
     align-items: center;
     gap: 15px;
+
+    * {
+      font-size: 16px;
+    }
 
     @media (max-width: 768px) {
       font-size: 14px;
@@ -116,37 +119,43 @@
   }
 
   .result {
-    padding: 50px 50px;
+    padding: 80px 50px;
     border-radius: 5px;
-    background-image: url('@assets/paper.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
+    background-image: url("@assets/paper.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     margin-bottom: 20px;
     font-size: 16px;
     width: 550px;
     height: 700px;
-    overflow-y: auto;
-	transform: translateY(-40px);
+    transform: translateY(-40px);
 
-    &::-webkit-scrollbar {
-      width: 7px;
-      background-color: rgba(255, 0, 0, 0.266);
+    .result-text {
+      height: 550px;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        width: 3px;
+        background-color: rgba(255, 255, 255, 0.266);
+      }
+  
+      &::-webkit-scrollbar-thumb {
+        background-color: $primary-color;
+        border-radius: 5px;
+      }
+  
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
     }
 
-    &::-webkit-scrollbar-thumb {
-      background-color: rgba(188, 188, 188, 0.681);
-      border-radius: 5px;
-    }
-
-    @media (max-width: 768px) {
-      font-size: 14px;
-    }
+   
   }
 
   .note {
-	display: flex;
-	gap: 5px;
+    display: flex;
+    gap: 5px;
   }
 
   .note * * {

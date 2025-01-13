@@ -1,0 +1,46 @@
+@use "@scss/common.scss" as *;
+
+.content6-minigame {
+  min-height: 70vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 35px;
+
+    @media (max-width: 768px) {
+      font-size: 25px;
+    }
+  }
+
+  .desc {
+    font-size: 23px;
+  }
+  
+  .btn-join {
+    background-color: $primary-color;
+    color: #FFF;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin-top: 25px;
+  }
+
+  .node {
+    font-size: 28px;
+    color: #ffffff;
+    background-color: $primary-color;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+}

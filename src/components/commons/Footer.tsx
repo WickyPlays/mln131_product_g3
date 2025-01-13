@@ -5,7 +5,7 @@ export default function Footer() {
     <div className="footer">
       <div className="content">
         <div className="content-association">
-          <p className="title">Cùng với sự tham gia của</p>
+          <p className="title">Trang web được thực hiện cùng với sự tham gia của</p>
           <p>SE170112 - Nguyễn Ngọc Tuấn</p>
           <p>SE171076 - Nguyễn Bình Phương Trâm</p>
           <p>SE172082 - Từ Thiên Bảo</p>

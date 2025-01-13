@@ -3,20 +3,16 @@ import axios from "axios";
 import "./Content5AI.scss";
 import { Button } from "@mui/material";
 import Markdown from "react-markdown";
-import Brightness5Icon from "@mui/icons-material/Brightness5";
 import InfoIcon from "@mui/icons-material/Info";
 import SmartToyIcon from "@mui/icons-material/SmartToy";
 
 export default function Content5AI() {
-  const prompts = [
-    "Tạo bài thơ vần hay liên quan đến chủ đề.",
-    "Nêu một ví dụ thực tiễn về đoàn kết toàn dân tộc ở Việt Nam.",
-    "Giải thích khái niệm 'tự do' trong tư tưởng Hồ Chí Minh bằng ví dụ thực tế.",
-    "Kể một câu chuyện lịch sử Việt Nam thể hiện tinh thần đoàn kết.",
-    "Phân tích vai trò của thế hệ trẻ trong việc phát huy tinh thần đoàn kết quốc tế.",
-    "Lời bài hát về tư tưởng Hồ Chí Minh về đoàn kết quốc tế.",
-  ];
-
+	const prompts = [
+		"Viết một bài thơ ngắn.",
+		"Nêu một ví dụ thực tiễn về chính sách phát triển kinh tế.",
+		"Giải thích khái niệm 'sở hữu công cộng về tư liệu sản xuất' trong chủ nghĩa xã hội bằng một tình huống thực tế.",
+		"Phân tích vai trò của trí thức trẻ trong quá trình thúc đẩy sự nghiệp công nghiệp hóa, hiện đại hóa theo định hướng xã hội chủ nghĩa.",
+	];
   const [selectedPrompt, setSelectedPrompt] = useState(prompts[0]);
   const [resultText, setResultText] = useState("Câu trả lời sẽ hiện ở đây.");
   const [loading, setLoading] = useState(false);
@@ -55,13 +51,12 @@ export default function Content5AI() {
       <div className="content">
         <div className="content-result">
           <div className="result">
-            {resultText && <Markdown>{resultText}</Markdown>}
+            <p className="result-text">{resultText && <Markdown>{resultText}</Markdown>}</p>
           </div>
           <div className="note">
             <InfoIcon className="info-icon" />
             <div>
-              <p>Cảnh báo: Nội dung do AI tạo ra có thể không chính xác.</p>
-              <p>Vui lòng kiểm tra trước khi sử dụng nội dung.</p>
+              <p>Powered by Gemini 1.5 Flash</p>
             </div>
           </div>
         </div>
