@@ -1,9 +1,9 @@
-import "./Content1Intro.scss";
+import "./Content0Intro.scss";
 
 
-export default function Content1Intro() {
+export default function Content0Intro() {
   return (
-    <div className="content1-intro">
+    <div className="content0-intro">
       <p className="title">Mục lục</p>
       <div className="content-list">
         <p>
