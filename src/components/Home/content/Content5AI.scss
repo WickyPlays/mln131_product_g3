@@ -1,0 +1,155 @@
+@use "@scss/common.scss" as *;
+
+.content5-ai {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url("@assets/ai-pattern-4.png");
+  background-size: cover;
+  padding: 100px 10rem;
+
+  .content {
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      padding: 0 1.2rem;
+    }
+  }
+
+  .content-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 50px;
+
+    @media (max-width: 768px) {
+      font-size: 25px;
+    }
+  }
+
+  .node {
+    font-size: 28px;
+    color: #ffffff;
+    background-color: $primary-color;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  .prompt-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .prompt-item {
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: $primary-color;
+    text-align: left;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+
+    &:hover {
+      background-color: #eb9900;
+    }
+
+    &.selected {
+      background-color: #ffd900;
+      color: #000000;
+
+      p {
+        color: #000000;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .btn-generate-prompt {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 9px;
+    background-color: $primary-color;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-transform: none;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+
+    &:disabled {
+      background-color: #ccc;
+      color: #666;
+      cursor: not-allowed;
+    }
+  }
+
+  .content-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .result {
+    padding: 50px 50px;
+    border-radius: 5px;
+    background-image: url('@assets/paper.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    width: 550px;
+    height: 700px;
+    overflow-y: auto;
+	transform: translateY(-40px);
+
+    &::-webkit-scrollbar {
+      width: 7px;
+      background-color: rgba(255, 0, 0, 0.266);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(188, 188, 188, 0.681);
+      border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  .note {
+	display: flex;
+	gap: 5px;
+  }
+
+  .note * * {
+    font-size: 16px !important;
+  }
+}
