@@ -5,6 +5,15 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: "/mln131_product_g3/",
   plugins: [react()],
+  resolve: {
+    alias: {
+      '@components': '/src/components',
+      '@assets': '/src/assets',
+      '@utils': '/src/components/utils',
+      '@scss': '/src/scss',
+      '@commons': '/src/components/commons',
+    }
+  },
   server: {
     proxy: {
       '/api': {
@@ -16,3 +25,4 @@ export default defineConfig({
     }
   }
 })
+
