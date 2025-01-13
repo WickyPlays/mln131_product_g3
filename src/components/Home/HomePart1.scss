@@ -2,8 +2,9 @@
   min-height: 100vh;
   width: 100%;
   background-image: url("@assets/content-bg.jpg");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: repeat-y;
 
   .cover {
     height: 100%;
