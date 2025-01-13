@@ -1,13 +1,20 @@
-import { Route, Routes } from "react-router-dom";
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider, Routes } from "react-router-dom";
 import "./App.scss";
 import HomePage from "@components/Home/HomePage";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/mln131_product_g3">
+      <Route index element={<HomePage />} />
+    </Route>
+  )
+)
+
 
 export default function App() {
   return (
     <div className="app">
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-      </Routes>
+       <RouterProvider router={router}/>
     </div>
   );
 }
