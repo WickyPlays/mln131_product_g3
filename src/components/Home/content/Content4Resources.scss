@@ -1,0 +1,90 @@
+@use "@scss/common.scss" as *;
+
+.content4-resources {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: $primary-color;
+  background-size: cover;
+  padding: 100px 10rem;
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    z-index: 1;
+    column-gap: 40px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      padding: 0 1.2rem;
+    }
+  }
+
+  .content-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #FFF;
+
+    @media (max-width: 768px) {
+      font-size: 25px;
+    }
+  }
+
+  .content-title {
+    color: #FFF;
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+
+  .node {
+    font-size: 28px;
+    color: #000;
+    background-color: #FFF;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  .file {
+    cursor: pointer;
+    background-color: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 15px;
+    width: 100%;
+
+    &-desc {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &-label {
+      color: #000;
+      font-weight: 600;
+    }
+
+    &-download-label {
+      color: #000;
+      font-size: 15px;
+    }
+
+    &:hover {
+      background-color: #f7f7f7;
+    }
+  }
+}
