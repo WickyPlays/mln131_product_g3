@@ -136,6 +136,28 @@
         margin-bottom: 0 !important;
       }
     }
+
+    .sect-3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 100px 0;
+  
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        padding: 0 10rem;
+        margin-top: 25px;
+        color: #000;
+  
+        .Mui-expanded {
+          margin-top: 0 !important;
+          margin-bottom: 0 !important;
+        }
+      }
+    }
   }
 
 }
