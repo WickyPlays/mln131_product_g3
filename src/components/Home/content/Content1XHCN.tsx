@@ -2,6 +2,11 @@ import { Button } from "@mui/material";
 import "./Content1XHCN.scss";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { useState } from "react";
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import GavelIcon from '@mui/icons-material/Gavel';
+import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
+import AgricultureIcon from '@mui/icons-material/Agriculture';
+import PublicIcon from '@mui/icons-material/Public';
 
 export default function Content1XHCN() {
   const choices = [
@@ -148,7 +153,10 @@ export default function Content1XHCN() {
           </p>
           <div className="nodes">
             <div className="node">
-              <div className="node-icon"></div>
+              <div className="node-icon">
+                <AttachMoneyIcon />
+              </div>
+              <p className="node-title">Về kinh tế</p>
               <div className="node-content">
                 <ul>
                   <li>Sở hữu công cộng về tư liệu sản xuất là chủ yếu.</li>
@@ -164,33 +172,54 @@ export default function Content1XHCN() {
               </div>
             </div>
             <div className="node">
-              <div className="node-icon"></div>
+              <div className="node-icon">
+                <GavelIcon />
+              </div>
+              <div className="node-title">Về chính trị</div>
               <div className="node-content">
-                Giai cấp công nhân giữ vai trò lãnh đạo thông qua chính đảng của
-                mình. Xây dựng nhà nước pháp quyền xã hội chủ nghĩa, bảo vệ
-                quyền lợi của nhân dân lao động.
+                <ul>
+                  <li>Giai cấp công nhân giữ vai trò lãnh đạo thông qua chính đảng của
+                  mình.</li>
+                  <li>Xây dựng nhà nước pháp quyền xã hội chủ nghĩa, bảo vệ
+                  quyền lợi của nhân dân lao động.</li>
+                </ul>
               </div>
             </div>
             <div className="node">
-              <div className="node-icon"></div>
+              <div className="node-icon">
+                <PeopleAltIcon />
+              </div>
+              <p className="node-title">Về xã hội</p>
               <div className="node-content">
-                Xóa bỏ áp bức, bất bình đẳng giai cấp, dân tộc và giới tính.
-                Thực hiện công bằng xã hội trong phân phối của cải, đảm bảo phúc
-                lợi xã hội.
+                <ul>
+                  <li>Xóa bỏ áp bức, bất bình đẳng giai cấp, dân tộc và giới tính.</li>
+                  <li>Thực hiện công bằng xã hội trong phân phối của cải, đảm bảo phúc
+                  lợi xã hội.</li>
+                </ul>
               </div>
             </div>
             <div className="node">
-              <div className="node-icon"></div>
+              <div className="node-icon">
+                <AgricultureIcon />
+              </div>
+              <p className="node-title">Về văn hóa</p>
               <div className="node-content">
-                Xây dựng nền văn hóa mới dựa trên giá trị tiến bộ, nhân văn. Đề
-                cao giáo dục, khoa học và ý thức cộng đồng.
+                <ul>
+                  <li>Xây dựng nền văn hóa mới dựa trên giá trị tiến bộ, nhân văn.</li>
+                  <li>Đề cao giáo dục, khoa học và ý thức cộng đồng.</li>
+                </ul>
               </div>
             </div>
             <div className="node">
-              <div className="node-icon"></div>
+              <div className="node-icon">
+                <PublicIcon />
+              </div>
+              <div className="node-title">Về quan hệ quốc tế</div>
               <div className="node-content">
-                Đảm bảo bình đẳng, đoàn kết giữa các dân tộc. Góp phần thúc đẩy
-                hòa bình, hợp tác, và tiến bộ xã hội toàn cầu.
+                <ul>
+                  <li>Đảm bảo bình đẳng, đoàn kết giữa các dân tộc.</li>
+                  <li>Góp phần thúc đẩy hòa bình, hợp tác, và tiến bộ xã hội toàn cầu.</li>
+                </ul>
               </div>
             </div>
           </div>

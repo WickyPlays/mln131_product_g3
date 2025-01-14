@@ -256,6 +256,20 @@
         background-color: $primary-color;
         color: #fff;
         border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        > * {
+          font-size: 50px;
+        }
+      }
+
+      .node-title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 10px;
+        color: #000 !important;
       }
 
       .node-content {

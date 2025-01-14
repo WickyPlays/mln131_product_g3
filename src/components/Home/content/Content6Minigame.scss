@@ -1,19 +1,36 @@
 @use "@scss/common.scss" as *;
 
 .content6-minigame {
+  position: relative;
   min-height: 70vh;
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-image: url('@assets/Content6BG.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  .cover {
+    position: relative;
+    width: 100%;
+    height: 100vh !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15rem;
+    background-color: #0000004a !important;
+  }
 
   .title {
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 35px;
+    color: #FFF !important;
 
     @media (max-width: 768px) {
       font-size: 25px;
@@ -22,6 +39,7 @@
 
   .desc {
     font-size: 23px;
+    color: #FFF !important;
   }
   
   .btn-join {
