@@ -17,8 +17,8 @@ export default function Content6Minigame() {
         <p className="desc">
           Hãy cùng thử thách kiến thức của bạn thông qua trò chơi nhé!
         </p>
-        <Button className="btn-join" onClick={handleOpen}>
-          Tham gia Wordwall
+        <Button className="btn-join" onClick={handleOpen} disabled>
+          Trò chơi chưa được mở vì đang thực hiện tại lớp
         </Button>
       </div>
 
