@@ -44,7 +44,7 @@ export default function HomePart0() {
             </section>
             <section>
               <p className="title">Mã nguồn</p>
-              <p>
+              <p className="src">
                 <a href="https://github.com/WickyPlays/mln131_product_g3">
                   https://github.com/WickyPlays/mln131_product_g3
                 </a>

@@ -28,6 +28,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    @media (max-width: 768px) {
+      padding: 0 2rem;
+    }
   }
 
   .cover::before {
@@ -45,6 +49,10 @@
     position: absolute;
     z-index: 2;
     padding: 0 15rem;
+
+    @media (max-width: 768px) {
+      padding: 0 2rem;
+    }
   }
 
   .title {
@@ -260,9 +268,13 @@
     padding: 0 15rem;
     margin-bottom: 60px;
 
+    @media (max-width: 1100px) {
+      padding: 0 1rem;
+    }
+
     &-icon {
       font-size: 120px;
-      
+
       * {
         color: #000;
       }
@@ -274,10 +286,15 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      text-align: justify;
       justify-content: center;
-      background-color: #FFF;
+      background-color: #fff;
       color: #000;
       box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+      @media (max-width: 1100px) {
+        padding: 25px 1rem;
+      }
     }
   }
 }

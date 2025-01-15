@@ -39,6 +39,10 @@
       padding: 20px 2rem;
     }
 
+    @media (max-width: 768px) {
+      width: 100vw;
+    }
+
     .content {
       overflow-y: auto;
       overflow-x: hidden;
@@ -62,6 +66,10 @@
       text-align: center;
       font-size: 35px;
       font-weight: 700;
+
+      @media (max-width: 768px) {
+        font-size: 25px;
+      }
     }
 
     .divider {
@@ -106,6 +114,13 @@
     }
 
     .credits {
+      
+      @media (max-width: 768px) {
+        section > * {
+          font-size: 16px;
+        }
+      }
+
       section {
         margin-bottom: 35px;
       }
@@ -127,6 +142,12 @@
           color: #000;
         }
       }
+    }
+  }
+  
+  .src > * {
+    @media (max-width: 768px) {
+      font-size: 14px;
     }
   }
 }

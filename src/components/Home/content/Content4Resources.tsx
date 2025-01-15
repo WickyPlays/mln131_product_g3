@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 import "./Content4Resources.scss";
-import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
+import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 
 export default function Content4Resources() {
   return (
@@ -12,7 +12,7 @@ export default function Content4Resources() {
         <div className="file-nodes">
           <p className="content-title">Tài liệu tham khảo</p>
           <Button className="file">
-            <PictureAsPdfIcon sx={{color: "#FF0000", fontSize: '50px'}} />
+            <PictureAsPdfIcon sx={{ color: "#FF0000", fontSize: "50px" }} />
             <div className="file-desc">
               <p className="file-label">Chủ nghĩa xã hội khoa học Mác-Lenin</p>
               <p className="file-download-label">Download</p>
@@ -20,11 +20,9 @@ export default function Content4Resources() {
           </Button>
         </div>
         <div className="video-nodes">
-          <p className="content-title">Video tham khảo thêm
-          </p>
+          <p className="content-title">Video tham khảo thêm</p>
           <iframe
-            width="480"
-            height="240"
+            className="video"
             src="https://www.youtube.com/embed/6ItwIIWZmDs"
             title="YouTube video player"
             frameBorder="0"

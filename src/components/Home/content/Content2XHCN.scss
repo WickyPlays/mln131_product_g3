@@ -28,6 +28,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    @media (max-width: 768px) {
+      padding: 0 1.2rem;
+    }
   }
 
   .cover::before {
@@ -45,6 +49,14 @@
     position: absolute;
     z-index: 2;
     padding: 0 15rem;
+
+    @media (max-width: 768px) {
+      padding: 0 1rem;
+    }
+  }
+
+  .content {
+    padding: 0 10px;
   }
 
   .title {
@@ -101,6 +113,10 @@
         margin-top: 0 !important;
         margin-bottom: 0 !important;
       }
+
+      @media (max-width: 768px) {
+        padding: 0 1rem;
+      }
     }
 
     .accordion-summary {
@@ -128,8 +144,12 @@
 
     .content {
       gap: 5px;
-      padding: 0 20rem;
+      padding: 0 18rem;
       margin-top: 25px;
+
+      @media (max-width: 1100px) {
+        padding: 0 1rem;
+      }
 
       * {
         color: #000;
@@ -186,6 +206,10 @@
       font-weight: 500;
       padding: 0 10rem;
 
+      @media (max-width: 1100px) {
+        padding: 0 1rem;
+      }
+
       p {
         display: grid;
         grid-template-columns: 0.05fr 1fr;
@@ -203,6 +227,10 @@
 
     .choices-wrapper {
       padding: 0 10rem;
+
+      @media (max-width: 1100px) {
+        padding: 0 1rem;
+      }
     }
 
     .choices {
@@ -238,6 +266,10 @@
     padding: 0 15rem;
     margin-bottom: 60px;
 
+    @media (max-width: 1100px) {
+      padding: 0 1rem;
+    }
+
     &-icon {
       font-size: 120px;
 
@@ -252,10 +284,15 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      text-align: justify;
       justify-content: center;
       background-color: #fff;
       color: #000;
       box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+      @media (max-width: 1100px) {
+        padding: 25px 1rem;
+      }
     }
   }
 }

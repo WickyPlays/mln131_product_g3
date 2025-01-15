@@ -8,15 +8,22 @@
   background-size: cover;
   padding: 100px 10rem;
 
+  @media (max-width: 768px) {
+    padding: 100px 1.2rem;
+  }
+
   .content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     z-index: 1;
     column-gap: 40px;
+    box-sizing: border-box;
 
     @media (max-width: 768px) {
-      grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column;
       padding: 0 1.2rem;
+      gap: 30px;
     }
   }
 
@@ -40,7 +47,7 @@
   .content-title {
     color: #FFF;
     font-size: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
   }
 
   .node {
@@ -76,6 +83,7 @@
     &-label {
       color: #000;
       font-weight: 600;
+      text-align: left;
     }
 
     &-download-label {
@@ -86,5 +94,11 @@
     &:hover {
       background-color: #f7f7f7;
     }
+  }
+
+  .video {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
   }
 }

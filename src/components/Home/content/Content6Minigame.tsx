@@ -36,8 +36,6 @@ export default function Content6Minigame() {
             <iframe
               style={{width: '100%', height: '100%'}}
               src="https://wordwall.net/vi/embed/32b46d74745d48e29741ea94c8483e47?themeId=41&templateId=3&fontStackId=0"
-              width="500"
-              height="380"
               frameborder="0"
               allowfullscreen
             ></iframe>
