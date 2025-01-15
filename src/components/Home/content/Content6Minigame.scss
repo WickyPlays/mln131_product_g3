@@ -77,11 +77,12 @@
   margin: auto;
   padding: 20px;
   overflow: auto;
-  gap: 25px;
+  gap: 10px;
 
   .btn-close {
     color: #000;
     background-color: #ffe100;
+    border-radius: 25px;
   }
 }
 

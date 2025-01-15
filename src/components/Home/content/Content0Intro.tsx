@@ -13,7 +13,7 @@ export default function Content0Intro() {
           <span>2</span> Thời kì quá độ lên chủ nghĩa xã hội
         </p>
         <p>
-          <span>3</span> Câu hỏi CQ: "Ở các nước phương Tây hiện tại có rất nhiều quốc gia phát triển, chế độ phúc lợi và chăm sóc sức khỏe cho người dân rất tốt. Việt Nam quá độ lên chủ nghĩa xã hội cần học hỏi gì từ những nước phát triển đó?"
+          <span>3</span> CQ: "Ở các nước phương Tây hiện tại có rất nhiều quốc gia phát triển, chế độ phúc lợi và chăm sóc sức khỏe cho người dân rất tốt. Việt Nam quá độ lên chủ nghĩa xã hội cần học hỏi gì từ những nước phát triển đó?"
         </p>
         <p>
           <span>4</span> Tư liệu sưu tầm
