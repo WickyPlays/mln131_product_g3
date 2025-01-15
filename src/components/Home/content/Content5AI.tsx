@@ -7,13 +7,18 @@ import InfoIcon from "@mui/icons-material/Info";
 import SmartToyIcon from "@mui/icons-material/SmartToy";
 
 export default function Content5AI() {
-	const prompts = [
-		"Viết một bài thơ ngắn.",
-		"Nêu một ví dụ thực tiễn về chính sách phát triển kinh tế.",
-		"Giải thích khái niệm 'sở hữu công cộng về tư liệu sản xuất' trong chủ nghĩa xã hội bằng một tình huống thực tế.",
-		"Phân tích vai trò của trí thức trẻ trong quá trình thúc đẩy sự nghiệp công nghiệp hóa, hiện đại hóa theo định hướng xã hội chủ nghĩa.",
-	];
+  const prompts = [
+    "Viết bài thơ mẫu về lý tưởng chủ nghĩa xã hội.",
+    "Giải thích ý nghĩa của thời kỳ quá độ lên CNXH.",
+    "Ví dụ cuộc sống trong thời kỳ quá độ lên CNXH.",
+    "Viết diễn văn ngắn khuyến khích xây dựng CNXH.",
+    "So sánh thời kỳ quá độ và xã hội CNXH hoàn thiện.",
+    "Bàn luận vai trò kinh tế tập thể trong thời kỳ quá độ.",
+    "custom"
+  ];
+
   const [selectedPrompt, setSelectedPrompt] = useState(prompts[0]);
+  const [customPrompt, setCustomPrompt] = useState("");
   const [resultText, setResultText] = useState("Câu trả lời sẽ hiện ở đây.");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -23,12 +28,18 @@ export default function Content5AI() {
     setResultText("Loading answer...");
     setError("");
     try {
+      let promptToSend = selectedPrompt;
+      
+      if (promptToSend === "custom") {
+        promptToSend = customPrompt.trim();
+      }
+
       const response = await axios.post(
         //@ts-ignore
         `${import.meta.env.VITE_GEMINI_URL}`,
         {
           text:
-            selectedPrompt +
+            promptToSend +
             " liên quan đến Chủ nghĩa xã hội và thời kỳ quá độ lên chủ nghĩa xã hội",
         }
       );
@@ -51,7 +62,9 @@ export default function Content5AI() {
       <div className="content">
         <div className="content-result">
           <div className="result">
-            <p className="result-text">{resultText && <Markdown>{resultText}</Markdown>}</p>
+            <p className="result-text">
+              {resultText && <Markdown>{resultText}</Markdown>}
+            </p>
           </div>
           <div className="note">
             <InfoIcon className="info-icon" />
@@ -62,7 +75,7 @@ export default function Content5AI() {
         </div>
         <div className="content-input">
           <div className="prompt-list">
-            {prompts.map((prompt, index) => (
+            {prompts.slice(0, -1).map((prompt, index) => (
               <div
                 key={index}
                 className={`prompt-item ${
@@ -75,6 +88,13 @@ export default function Content5AI() {
               </div>
             ))}
           </div>
+          <textarea
+            className={`custom-prompt ${selectedPrompt === "custom" ? "custom-prompt-active" : ""}`}
+            placeholder="Nhập nội dung tùy chỉnh tại đây..."
+            value={customPrompt}
+            onClick={() => setSelectedPrompt("custom")}
+            onChange={(e) => setCustomPrompt(e.target.value)}
+          />
           <Button
             variant="contained"
             className="btn-generate-prompt"

@@ -90,6 +90,27 @@
     }
   }
 
+  .custom-prompt {
+    background-color: $primary-color;
+    padding: 10px 15px;
+    color: #FFF;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 15px;
+    transform: translateY(-10px);
+    font-family: 'Barlow', sans-serif;
+
+    &-active {
+      background-color: #ffd900;
+      color: #000;
+      font-weight: 600;
+    }
+
+    &::placeholder {
+      color: #FFF;
+    }
+  }
+
   .btn-generate-prompt {
     padding: 10px 20px;
     font-size: 16px;
