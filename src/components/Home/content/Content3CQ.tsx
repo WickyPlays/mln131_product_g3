@@ -1,11 +1,10 @@
 import "./Content3CQ.scss";
-import img1 from "@assets/content-bg.jpg";
-import img2 from "@assets/content-bg.jpg";
-import img3 from "@assets/content-bg.jpg";
-import img4 from "@assets/content-bg.jpg";
-import img5 from "@assets/content-bg.jpg";
-import img6 from "@assets/content-bg.jpg";
-import img7 from "@assets/content-bg.jpg";
+import img2 from "@assets/Content3P2.jpg";
+import img3 from "@assets/Content3P3.jpg";
+import img4 from "@assets/Content3P4.jpg";
+import img5 from "@assets/Content3P5.jpg";
+import img6 from "@assets/Content3P6.jpg";
+import img7 from "@assets/Content3P7.jpeg";
 import { useEffect, useRef, useState } from "react";
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 
