@@ -1,4 +1,5 @@
 import "./Content3CQ.scss";
+import img1 from "@assets/Content3P1.webp";
 import img2 from "@assets/Content3P2.jpg";
 import img3 from "@assets/Content3P3.jpg";
 import img4 from "@assets/Content3P4.jpg";
@@ -104,7 +105,7 @@ export default function Content3CQ() {
       </p>
     </div>,
   ];
-  const images = [null, img2, img3, img4, img5, img6, img7];
+  const images = [img1, img2, img3, img4, img5, img6, img7];
 
   useEffect(() => {
     const handleScroll = () => {

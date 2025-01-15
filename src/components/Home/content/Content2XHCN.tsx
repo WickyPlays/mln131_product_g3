@@ -74,7 +74,7 @@ export default function Content2XHCN() {
     {
       title: "Kinh tế",
       content:
-        "Thời kỳ quá độ yêu cầu chuyển đổi từ nền kinh tế lạc hậu, dựa trên sản xuất nhỏ, sang nền kinh tế hiện đại, xã hội hóa cao. Sự phát triển của các thành phần kinh tế, đặc biệt là kinh tế nhà nước và kinh tế tập thể, đóng vai trò chủ đạo. Đồng thời, cần duy trì và cải cách các thành phần kinh tế tư nhân trong khuôn khổ pháp luật để khai thác tiềm năng sản xuất. Việc xây dựng cơ sở hạ tầng, phát triển công nghiệp hóa, hiện đại hóa là nhiệm vụ then chốt để nâng cao năng lực sản xuất và đảm bảo sự ổn định xã hội.",
+        "Chuyển từ sản xuất nhỏ sang kinh tế hiện đại. Phát triển công nghiệp hóa, hiện đại hóa, kinh tế nhà nước, kinh tế tập thể, đồng thời khai thác kinh tế tư nhân.",
     },
     {
       title: "Chính trị",
@@ -152,12 +152,10 @@ export default function Content2XHCN() {
             <p>
               <span className="content-tag">Quá độ trực tiếp</span>
               <span>
-                Là quá trình chuyển từ chủ nghĩa tư bản phát triển lên chủ nghĩa
-                cộng sản một cách trực tiếp, không qua giai đoạn trung gian. Tuy
-                nhiên, trong lịch sử, chưa từng có quốc gia nào thực hiện được
-                điều này. Điều này chủ yếu là do sự cần thiết của việc xây dựng
-                các cơ sở hạ tầng kinh tế, văn hóa, và xã hội để đảm bảo sự phát
-                triển đồng bộ cho chủ nghĩa cộng sản.
+                Chỉ áp dụng khi nền kinh tế tư bản đạt trình độ cao, nhưng chưa
+                quốc gia nào đủ điều kiện.Điều này chủ yếu là do sự cần thiết
+                của việc xây dựng các cơ sở hạ tầng kinh tế, văn hóa, và xã hội
+                để đảm bảo sự phát triển đồng bộ cho chủ nghĩa cộng sản.
               </span>
             </p>
             <p>
@@ -166,8 +164,7 @@ export default function Content2XHCN() {
                 Đây là quá trình chuyển đổi ở các quốc gia chưa trải qua giai
                 đoạn phát triển đầy đủ của chủ nghĩa tư bản, thường phải tiến
                 hành một cách tuần tự qua các giai đoạn cải cách, xây dựng xã
-                hội mới. Các nước như Liên Xô, Trung Quốc, và Việt Nam đã từng
-                bước thực hiện điều này với những trình độ phát triển khác nhau.
+                hội mới.
                 <ul>
                   <li>
                     Ở Liên Xô, quá trình này được thực hiện thông qua các kế
@@ -194,28 +191,24 @@ export default function Content2XHCN() {
           <p className="title-label">Con đường rút ngắn</p>
           <div className="content">
             <p>
-              Con đường rút ngắn lên chủ nghĩa xã hội không chỉ là một lựa chọn
-              chiến lược mà còn phản ánh khát vọng của nhiều quốc gia muốn thoát
-              khỏi tình trạng lạc hậu và bất bình đẳng. Việc thực hiện con đường
-              này đòi hỏi sự đồng thuận chính trị mạnh mẽ, sự lãnh đạo sáng suốt
-              của chính phủ và sự tham gia tích cực của toàn xã hội.
+              Đối với các quốc gia lạc hậu, nhờ sự hỗ trợ của giai cấp vô sản
+              quốc tế và quá trình toàn cầu hóa, có thể lựa chọn con đường rút
+              ngắn, tiến thẳng lên chủ nghĩa xã hội mà không cần trải qua giai
+              đoạn phát triển tư bản chủ nghĩa.
             </p>
             <p>
-              Để thành công, các quốc gia cần xác định rõ các ưu tiên phát
-              triển, đầu tư mạnh mẽ vào giáo dục, y tế và cơ sở hạ tầng công
-              nghệ. Sự chuyển giao công nghệ từ các nước tiên tiến thông qua hợp
-              tác quốc tế và việc xây dựng năng lực nội tại cũng đóng vai trò
-              then chốt. Bên cạnh đó, việc thúc đẩy đổi mới sáng tạo trong các
-              lĩnh vực như trí tuệ nhân tạo, năng lượng tái tạo, và công nghệ
-              sinh học có thể giúp các quốc gia không chỉ theo kịp mà còn vượt
-              lên trong một số lĩnh vực trọng điểm.
+              Con đường này yêu cầu một chiến lược phát triển khôn ngoan, tận
+              dụng triệt để các thành tựu khoa học, công nghệ và kinh nghiệm
+              quốc tế. Trong bối cảnh cách mạng công nghiệp 4.0, các quốc gia có
+              thể sử dụng công nghệ tiên tiến, đổi mới sáng tạo, và sự hợp tác
+              toàn cầu để thúc đẩy phát triển nhanh chóng, thu hẹp khoảng cách
+              với các nước tiên tiến.
             </p>
             <p>
-              Tuy nhiên, con đường này không tránh khỏi những thách thức lớn,
-              bao gồm áp lực từ các thế lực bảo thủ, sự cạnh tranh toàn cầu và
-              nguy cơ phụ thuộc vào công nghệ nước ngoài. Do đó, cần xây dựng
-              một mô hình phát triển kinh tế - xã hội độc lập, tự chủ, nhưng vẫn
-              cởi mở và sẵn sàng hội nhập.
+              Mặc dù đầy thách thức, con đường rút ngắn mang lại cơ hội vượt bậc
+              nếu quốc gia đó xây dựng được các chính sách phát triển kinh tế -
+              xã hội phù hợp, khai thác tiềm năng nội lực và các nguồn lực bên
+              ngoài một cách hiệu quả.
             </p>
           </div>
         </div>
@@ -225,24 +218,14 @@ export default function Content2XHCN() {
             <p>
               <ArrowForwardIosIcon className="icon" />
               <span>
-                Thời kỳ quá độ lên chủ nghĩa xã hội là giai đoạn chuyển đổi cách
-                mạng từ xã hội cũ (tiền tư bản chủ nghĩa hoặc tư bản chủ nghĩa)
-                sang xã hội xã hội chủ nghĩa.
+                Thời kỳ cải biến từ xã hội cũ sang xã hội chủ nghĩa, phức tạp,
+                kéo dài, đấu tranh giữa cái cũ và cái mới.
               </span>
             </p>
             <p>
               <ArrowForwardIosIcon className="icon" />
               <span>
-                Đây là quá trình phát triển lâu dài và phức tạp, trong đó các
-                yếu tố của xã hội cũ và xã hội mới đan xen, đấu tranh lẫn nhau.
-              </span>
-            </p>
-            <p>
-              <ArrowForwardIosIcon className="icon" />
-              <span>
-                Thời kỳ này đòi hỏi sự thay đổi toàn diện về kinh tế, chính trị,
-                văn hóa, và xã hội dưới sự lãnh đạo của Đảng Cộng sản, nhằm xây
-                dựng nền tảng vật chất, kỹ thuật và tư tưởng cho chủ nghĩa xã
+                Phát triển đồng bộ kinh tế, chính trị, tư tưởng - văn hóa, và xã
                 hội.
               </span>
             </p>
